@@ -1,17 +1,17 @@
 module.exports={
     google:{
-        client_id:'686169683176-ni5terfl3fuu43s28mret7tfm5vu2u23.apps.googleusercontent.com',
-        client_secret:'vBWGzi2srQZXxcDX99Q7ai9z',
+        client_id:'***',
+        client_secret:'***',
         callback_url:'http://localhost:3000/auth/google/callback'
     },
     facebook:{
-        client_id:'1401348426549276',
-        client_secret:'fe91044980fe1b6d2dcfaee673ed3cab',
+        client_id:'***',
+        client_secret:'**',
         callback_url:'http://localhost:3000/auth/facebook/callback'
     },
     twitter:{
-        consumerKey:'LYGfr1bLvDl7pdty1RGXKg6Wz',
-        consumerSecret:'H0hS17UZnIZ5ui77o6TDrhWflz1OTivKF7FJ74ViGdyGX5ksSL',
+        consumerKey:'****',
+        consumerSecret:'***',
         callbackURL:'http://localhost:3000/auth/twitter/callback'
     },
     token_secret:"sidranerocks"
