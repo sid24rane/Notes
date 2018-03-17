@@ -1,0 +1,14 @@
+extends home
+block content
+	h1 Edit note
+	form(id="editnote",data-id="#{notes.id}")
+
+		label(for="title") Enter title
+		input(type="text",name="title",required,placeholder="Enter title ",value="#{notes.title}")
+
+		label(for="desc") Enter your Note
+		input(type="text",name="desc",required,placeholder="Enter note ",value="#{notes.body}")
+		
+		input(type="submit")
+	script(type="text/javascript",src="http://localhost:3000/js/editdel.js")
+		

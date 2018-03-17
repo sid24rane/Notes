@@ -1,0 +1,7 @@
+extends home
+block content
+    h3 Forgot Password
+    form(method="POST",action="/forgot")
+        label(for="Email") Email Address
+        input(type="email",name="useremail",required,placeholder="Enter your email Address")
+        input(type="submit",value="Reset Password")

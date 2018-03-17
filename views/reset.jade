@@ -1,0 +1,13 @@
+extends home
+block content
+	h1  Reset Password
+	form(method="post",action="/reset",id="reset")
+
+		label(for="password") Enter new password
+		input(type="password",name="pass",required,placeholder="New password")
+        
+		label(for="cpassword") Confirm password
+		input(type="password",name="cpass",required,placeholder="Confirm password")
+
+		input(type="submit",value="Update Password",data-id="#{userid}")
+	script(type="text/javascript",src="http://localhost:3000/js/reset.js")

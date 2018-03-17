@@ -1,0 +1,12 @@
+extends home
+block content
+	h1 Add note
+	form(method="post",action="/notes/add")
+
+		label(for="title") Enter title
+		input(type="text",name="title",required,placeholder="Enter title ")
+
+		label(for="desc") Enter your Note
+		input(type="text",name="desc",required,placeholder="Enter note ")
+		
+		input(type="submit")

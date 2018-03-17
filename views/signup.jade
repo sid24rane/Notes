@@ -1,0 +1,22 @@
+extends home
+block content
+	h1 singup here its free
+	h3 Using Google
+		a(href="http://localhost:3000/auth/google") Click here to signup using google
+	h3 Using Twitter
+		a(href="http://localhost:3000/auth/twitter") Click here to signup using Twitter
+	h3 Using Facebook
+		a(href="http://localhost:3000/auth/facebook") Click here to signup using Facebook
+				
+	form(method="post",action="/signup")
+
+		label(for="username") Enter username
+		input(type="text",name="username",required,placeholder="Enter username")
+
+		label(for="password") Enter password
+		input(type="password",name="password",required,placeholder="Enter password")
+
+		label(for="email") Enter email
+		input(type="email",name="email",required,placeholder="Enter email")
+
+		input(type="submit")

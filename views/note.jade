@@ -1,0 +1,15 @@
+extends home
+block content
+	div.container(id="#{notes.id}")
+		h1 
+			a(href="/notes/#{notes.id}")	#{notes.title}
+		h4	Posted at #{notes.createdAt}	
+		p=notes.body
+		h4
+			a(href="/notes/#{notes.id}")	Read more
+		h4
+			a(href="/notes/edit/#{notes.id}")	Edit
+		h4
+			a(href="",id="delete",data-id="#{notes.id}")	Delete	
+	script(type="text/javascript",src="http://localhost:3000/js/del.js")
+		

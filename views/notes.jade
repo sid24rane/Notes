@@ -1,0 +1,18 @@
+extends home
+block content
+	if user.email_verified == 0
+		h3 Please verify your email address	
+	h1 Welcome #{user.username}
+	h2 
+		a(href="http://localhost:3000/notes/logout") Click here to logout 
+	h2 
+		a(href="http://localhost:3000/notes/add") Click here to Add new note	
+	each note in notes
+		div.container(id="#{note.id}")
+			h1 
+				a(href="/notes/#{note.id}")	#{note.title}
+			h4	Posted at #{note.createdAt}	
+			p=note.body
+			h4
+				a(href="/notes/#{note.id}")	Read more
+			
